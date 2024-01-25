@@ -579,3 +579,62 @@ img {
 .footer-icon {
     fill: #F4F4FD;
 }
+
+
+/* ------------------ */
+/* ----backdrop---- */
+
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(46, 47, 66, 0.40);
+}
+
+.backdrop-modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 24px;
+    border-radius: 4px;
+    background: #FCFCFC;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.backdrop-modal-close_btn {
+    min-width: 24px;
+    min-height: 24px;
+    border-radius: 50%;
+    border-color: rgba(0, 0, 0, 0.10);
+    border-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    background-color: #E7E9FC;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-modal-close_btn:hover {
+    background-color: #404BBF;
+    border: none;
+}
+
+.backdrop-modal-close_btn:hover .backdrop-modal-icon {
+    fill: #FFFFFF;
+}
+
+.backdrop-modal-icon {
+    fill: #2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-modal-form {
+    width: 100%;
+    margin-top: 24px;
+}
